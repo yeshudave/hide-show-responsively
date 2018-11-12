@@ -14,7 +14,16 @@ html {
 }
 
 img {
-  padding: 0 .25rem .25rem;
+  display: block;
+  width: 100%;
+}
+
+img:nth-child(3) {
+  display: none;
+}
+
+img:nth-child(4) {
+  display: none;
 }
 
 *, *::before, *::after {
@@ -24,34 +33,50 @@ img {
 @media only screen and (min-width: 25em) {
 
   img {
-    display: block;
-    width: 100%;
+    display: inline-block;
+    width: 50%;
   }
 
+  img:nth-child(3) {
+    display: inline-block;
+  }
+
+  img:nth-child(4) {
+    display: inline-block;
 }
 
 @media only screen and (min-width: 38em) {
 
-  html {
-    line-height: 1.4;
-  }
-
   img {
     display: inline-block;
-    width: 50%;
+    width: 33.333%;
   }
+
+  img:nth-child(1) {
+    display: none;
+  }
+
+  img:nth-child(3) {
+    display: inline-block;
+  }
+
+  img:nth-child(4) {
+    display: inline-block;
 
 }
 
 @media only screen and (min-width: 60em) {
 
-  html {
-    line-height: 1.5;
-  }
-
   img {
     display: inline-block;
     width: 25%;
   }
+
+  img:nth-child(3) {
+    display: inline-block;
+  }
+
+  img:nth-child(4) {
+    display: inline-block;
 
 }
